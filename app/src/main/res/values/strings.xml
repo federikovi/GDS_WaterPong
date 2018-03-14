@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Water Pong</string>
+    <string name="battle">The ultimate non-alcoholic battle!</string>
+    <string name="teamFiuggi">Team Fiuggi</string>
+    <string name="teamFrasassi">Team Frasassi</string>
+    <string name="score">0</string>
+    <string name="plus3">+3 Points</string>
+    <string name="penalty">Penalty</string>
+    <string name="reset">Reset</string>
+</resources>

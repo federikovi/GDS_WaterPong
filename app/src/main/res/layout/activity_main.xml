@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.feder.udacityproject2.MainActivity"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/widthPicture2"
+                android:layout_height="@dimen/widthPicture2"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/pong4" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pixel"
+                    android:paddingTop="@dimen/paddingSmall"
+                    android:paddingBottom="@dimen/paddingSmall"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/app_name"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorTitle"
+                    android:textSize="@dimen/sizeScore2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/dhurjati"
+                    android:paddingBottom="@dimen/paddingMedium"
+                    android:text="@string/battle"
+                    android:textSize="@dimen/sizeBattle2"
+                    android:padding="@dimen/paddingSmall"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Team A -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/pixel"
+                    android:paddingBottom="@dimen/paddingTeam"
+                    android:paddingLeft="@dimen/paddingMedium"
+                    android:text="@string/teamFiuggi"
+                    android:textColor="@color/colorTeamName"
+                    android:textSize="@dimen/sizeTeamName" />
+
+                <TextView
+                    android:id="@+id/team_fiuggi_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/pixel"
+                    android:paddingBottom="@dimen/paddingMedium"
+                    android:text="@string/score"
+                    android:textColor="@color/colorScore"
+                    android:textSize="@dimen/sizeScore" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/paddingSmall"
+                    android:layout_marginLeft="@dimen/paddingSmall"
+                    android:layout_marginRight="@dimen/paddingSmall"
+                    android:fontFamily="@font/dhurjati"
+                    android:onClick="addThreeForTeamFiuggi"
+                    android:text="@string/plus3"
+                    android:textSize="@dimen/sizeButton" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/paddingSmall"
+                    android:layout_marginLeft="@dimen/paddingSmall"
+                    android:layout_marginRight="@dimen/paddingSmall"
+                    android:fontFamily="@font/dhurjati"
+                    android:onClick="penaltyFiuggi"
+                    android:text="@string/penalty"
+                    android:textSize="@dimen/sizeButton" />
+
+            </LinearLayout>
+
+            <!-- Grey Vertical line-->
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/paddingSmall"
+                android:background="@android:color/darker_gray" />
+
+            <!-- Team B -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/pixel"
+                    android:paddingBottom="@dimen/paddingTeam"
+                    android:paddingLeft="@dimen/paddingTeam"
+                    android:text="@string/teamFrasassi"
+                    android:textColor="@color/colorTeamName"
+                    android:textSize="@dimen/sizeTeamName" />
+
+                <TextView
+                    android:id="@+id/team_frasassi_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:fontFamily="@font/pixel"
+                    android:paddingBottom="@dimen/paddingMedium"
+                    android:text="@string/score"
+                    android:textColor="@color/colorScore"
+                    android:textSize="@dimen/sizeScore" />
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/paddingSmall"
+                    android:layout_marginLeft="@dimen/paddingSmall"
+                    android:layout_marginRight="@dimen/paddingSmall"
+                    android:fontFamily="@font/dhurjati"
+                    android:onClick="addThreeForTeamFrasassi"
+                    android:text="@string/plus3"
+                    android:textSize="@dimen/sizeButton" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/paddingSmall"
+                    android:layout_marginLeft="@dimen/paddingSmall"
+                    android:layout_marginRight="@dimen/paddingSmall"
+                    android:fontFamily="@font/dhurjati"
+                    android:onClick="penaltyFrasassi"
+                    android:text="@string/penalty"
+                    android:textSize="@dimen/sizeButton" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/paddingReset"
+            android:layout_marginTop="@dimen/paddingBig"
+            android:fontFamily="@font/dhurjati"
+            android:onClick="resetScore"
+            android:paddingLeft="@dimen/paddingMediumBig"
+            android:paddingRight="@dimen/paddingMediumBig"
+            android:text="@string/reset"
+            android:textSize="@dimen/sizeButton" />
+    </LinearLayout>
+</ScrollView>

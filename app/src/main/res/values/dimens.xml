@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sizeTeamName">32sp</dimen>
+    <dimen name="sizeScore">60sp</dimen>
+    <dimen name="sizeScore2">50sp</dimen>
+    <dimen name="sizeBattle">28sp</dimen>
+    <dimen name="sizeBattle2">24sp</dimen>
+    <dimen name="sizeButton">24sp</dimen>
+    <dimen name="paddingTeam">16dp</dimen>
+    <dimen name="paddingReset">32dp</dimen>
+    <dimen name="paddingSmall">8dp</dimen>
+    <dimen name="paddingMedium">24dp</dimen>
+    <dimen name="paddingMediumBig">20dp</dimen>
+    <dimen name="paddingBig">10dp</dimen>
+    <dimen name="paddingBig2">50dp</dimen>
+    <dimen name="heightPicture2">420dp</dimen>
+    <dimen name="widthPicture2">250dp</dimen>
+    <dimen name="heightPicture">320dp</dimen>
+    <dimen name="widthPicture">350dp</dimen>
+</resources>
